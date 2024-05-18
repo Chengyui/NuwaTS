@@ -13,7 +13,6 @@ import torch.nn.functional as F
 from einops import rearrange, repeat
 from timm.scheduler.cosine_lr import CosineLRScheduler
 warnings.filterwarnings('ignore')
-# 设置随机种子
 torch.manual_seed(42)
 np.random.seed(42)
 def fill_missing_data_ON(data, mask):
