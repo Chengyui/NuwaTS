@@ -123,7 +123,19 @@ class Exp_Imputation(Exp_Basic):
         train_steps = len(train_loader)
         print("train steps:", train_steps)
         early_stopping = EarlyStopping(patience=self.args.patience, verbose=True)
-
+        if self.args.prefix_tuningv2 or self.args.prefix_tuning or self.args.continue_tuningv2 or self.args.continue_tuning:
+            Path = 'your pretrained checkpoint'
+            ckpt = torch.load(Path,map_location=self.device)
+            keys_to_delete = [key for key in ckpt.keys() if 'out' in key or 'instance' in key]
+            for key in keys_to_delete:
+                del ckpt[key]
+                print(f'Deleted layer: {key}')
+            self.model.load_state_dict(ckpt,strict=False)
+            for i, (name, param) in enumerate(self.model.named_parameters()):
+                if 'prefix' in name:
+                    param.requires_grad = True
+                else:
+                    param.requires_grad = False
         model_optim = self._select_optimizer()
         criterion = self._select_criterion()
         scheduler = CosineLRScheduler(
