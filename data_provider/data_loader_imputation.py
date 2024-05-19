@@ -57,7 +57,7 @@ class Dataset_ETT_hour(Dataset):
             df_data = df_raw[self.val_sensors]
         else: 
             df_data = df_raw[self.test_sensors]
-            # 数据标准化
+
 
         self.scaler = StandardScaler()
         if self.scale:

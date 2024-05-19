@@ -203,7 +203,7 @@ class Exp_Imputation(Exp_Basic):
 
                 loss.backward()
                 model_optim.step()
-            scheduler.step(epoch)
+
             print("Adam lr epoch:{} lr:{}".format(epoch, model_optim.param_groups[0]['lr']))
 
 
@@ -218,7 +218,8 @@ class Exp_Imputation(Exp_Basic):
             if early_stopping.early_stop:
                 print("Early stopping")
                 break
-            # adjust_learning_rate(model_optim, epoch + 1, self.args)
+            # scheduler.step(epoch)
+            adjust_learning_rate(model_optim, epoch + 1, self.args)
 
 
 
