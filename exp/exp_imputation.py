@@ -185,7 +185,7 @@ class Exp_Imputation(Exp_Basic):
                 f_dim = -1 if self.args.features == 'MS' else 0
                 outputs = outputs[:, -T:, f_dim:]
                 if self.args.patch_con or self.args.temporal_con or self.args.flatten_con:
-                    con_output,con_loss = self.contrastive_loss(batch_x, batch_x_mark,representation)
+                    con_loss,con_output = self.contrastive_loss(batch_x, batch_x_mark,representation)
                     loss = criterion(outputs, batch_x) + criterion(con_output,batch_x) + con_loss * self.args.con_weight
                 else:
                     con_loss = torch.tensor(0).float().to(self.device)

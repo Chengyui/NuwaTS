@@ -50,22 +50,22 @@ class Dataset_ETT_hour(Dataset):
         df_raw = pd.read_csv(os.path.join(self.root_path,
                                           self.data_path))
 
-        # 选择不同的传感器数据集
-        if self.set_type == 0:  # 训练集
+
+        if self.set_type == 0:  
             df_data = df_raw[self.train_sensors]
-        elif self.set_type == 1:  # 验证集
+        elif self.set_type == 1:  
             df_data = df_raw[self.val_sensors]
-        else:  # 测试集
+        else: 
             df_data = df_raw[self.test_sensors]
             # 数据标准化
 
         self.scaler = StandardScaler()
         if self.scale:
-            self.scaler.fit(df_data.values)  # 注意：现在我们在每个数据集上独立进行标准化
+            self.scaler.fit(df_data.values)  
             data = self.scaler.transform(df_data.values)
         else:
             data = df_data.values
-        # 时间戳处理
+
         df_stamp = df_raw[['date']]
         df_stamp['date'] = pd.to_datetime(df_stamp['date'])
 
@@ -140,14 +140,14 @@ class Dataset_ETT_minute(Dataset):
         df_raw = pd.read_csv(os.path.join(self.root_path,
                                           self.data_path))
 
-        # 选择不同的传感器数据集
-        if self.set_type == 0:  # 训练集
+    
+        if self.set_type == 0:  
             df_data = df_raw[self.train_sensors]
-        elif self.set_type == 1:  # 验证集
+        elif self.set_type == 1: 
             df_data = df_raw[self.val_sensors]
-        else:  # 测试集
+        else:  
             df_data = df_raw[self.test_sensors]
-            # 数据标准化
+            
         #
         # if self.features == 'M' or self.features == 'MS':
         #     cols_data = df_raw.columns[1:]
@@ -157,11 +157,11 @@ class Dataset_ETT_minute(Dataset):
 
         self.scaler = StandardScaler()
         if self.scale:
-            self.scaler.fit(df_data.values)  # 注意：现在我们在每个数据集上独立进行标准化
+            self.scaler.fit(df_data.values)  
             data = self.scaler.transform(df_data.values)
         else:
             data = df_data.values
-        # 时间戳处理
+
         df_stamp = df_raw[['date']]
         df_stamp['date'] = pd.to_datetime(df_stamp['date'])
 
@@ -245,17 +245,17 @@ class Dataset_Custom(Dataset):
         cols.remove('date')
         sensor_columns = [col for col in cols]
         num_sensors = len(sensor_columns)
-        # 将传感器均等分配给训练集、验证集和测试集
+
         num_sensors_per_set = num_sensors // 3
         self.train_sensors = sensor_columns[:num_sensors_per_set]
         self.val_sensors = sensor_columns[num_sensors_per_set:2*num_sensors_per_set]
         self.test_sensors = sensor_columns[2*num_sensors_per_set:3*num_sensors_per_set]
-        # 根据集合类型选择传感器
-        if self.set_type == 0:  # 训练集
+
+        if self.set_type == 0: 
             df_data = df_raw[self.train_sensors]
-        elif self.set_type == 1:  # 验证集
+        elif self.set_type == 1: 
             df_data = df_raw[self.val_sensors]
-        else:  # 测试集
+        else: 
             df_data = df_raw[self.test_sensors]
 
         # if self.features == 'M' or self.features == 'MS':
@@ -266,11 +266,11 @@ class Dataset_Custom(Dataset):
 
         self.scaler = StandardScaler()
         if self.scale:
-            self.scaler.fit(df_data.values)  # 在每个数据集上独立进行标准化
+            self.scaler.fit(df_data.values)  
             data = self.scaler.transform(df_data.values)
         else:
             data = df_data.values
-        # 时间戳处理
+
         df_stamp = df_raw[['date']]
         df_stamp['date'] = pd.to_datetime(df_stamp['date'])
 
@@ -346,17 +346,17 @@ class Dataset_PEMS(Dataset):
         # data = total_data[self.set_type]
         cols_num = data.shape[1]
         # sensor_columns = [col for col in range(cols_num)]
-        # 将传感器均等分配给训练集、验证集和测试集
+        
         num_sensors_per_set = cols_num // 3
         self.train_data = data[:,:num_sensors_per_set]
         self.val_data = data[:,num_sensors_per_set:2 * num_sensors_per_set]
         self.test_data = data[:,2 * num_sensors_per_set:3 * num_sensors_per_set]
-        # 根据集合类型选择传感器
-        if self.set_type == 0:  # 训练集
+        
+        if self.set_type == 0:  
             df_data = self.train_data
-        elif self.set_type == 1:  # 验证集
+        elif self.set_type == 1:  
             df_data = self.val_data
-        else:  # 测试集
+        else:  
             df_data = self.test_data
 
         if self.scale:
