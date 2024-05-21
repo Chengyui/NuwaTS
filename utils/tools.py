@@ -88,24 +88,22 @@ def visual(true, preds=None, name='./pic/test.pdf',mask_rate=0.8):
     plt.savefig(name, bbox_inches='tight')
 
 def mask_visual(true, preds=None, name='./pic/test.pdf'):
-    """
-        结果可视化
-        """
+
     plt.figure()
-    # 画真实值曲线，颜色设为蓝色
+
     # plt.plot(true, label='Ground Truth', linewidth=2, color='blue')
 
-    # 遍历预测值，根据预测值和真实值是否相等选择颜色
+
     for i in range(len(preds)):
         if preds[i] == true[i]:
-            color = 'yellow'  # 如果相等，颜色设置为黄色
+            color = 'yellow' 
         else:
-            color = 'blue'  # 如果不相等，颜色设置为蓝色
-        plt.plot([i, i], [preds[i],preds[i]], color=color, linewidth=2)  # 在对应位置画点，确保曲线连续
+            color = 'blue'  
+        plt.plot([i, i], [preds[i],preds[i]], color=color, linewidth=2)  续
 
-    # 添加图例
+
     plt.legend()
-    # 保存图像
+
     plt.savefig(name, bbox_inches='tight')
 
 def adjustment(gt, pred):
