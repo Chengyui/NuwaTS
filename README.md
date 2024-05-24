@@ -3,8 +3,8 @@
  This is the pytorch implementation for Our Paper: NuwaTS: Mending Every Incomplete Time Series
 ## Overview 
 <p align="center">
-    <img src="images/NuwaTS.jpg" width="700" align="center">
-    <h4 style="margin-top: 10px; text-align: center;">NuwaTS: Mending Every Incomplete Time Series Using Series from Different Domain </h4>
+    <img src="images/NuwaTS.jpg" width="300" align="center">
+    <h4 style="margin-top: 10px; text-align: center;">NuwaTS is mending incomplete time series from different domain.</h4>
 </p>
 
 
