@@ -50,6 +50,8 @@ Our contributions are as follows:
     <img src="images/case5.jpg" width="700" align="center">
 </p>
 
+We partitioned the dataset along the sensor (variable) dimension into training, validation and test sets in a 1:1:1 ratio.
+Thus, all the methods are tested on unseen variables.
 ## Data Download
 
 You could download the dataset from here: [Google Drive](https://drive.google.com/drive/folders/1LMESpP-hIssamTlO-rXYJpx4q9p0xzLQ?usp=drive_link)
