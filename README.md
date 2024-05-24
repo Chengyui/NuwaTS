@@ -60,3 +60,7 @@ python run.py --task_name imputation --is_training 1
 
 ```
 
+### Acknowledgement
+We really thank [MVP-Tuning](https://github.com/kochsnow/MVP-Tuning) for inspiring us how to fine-tune pre-trained language model using [P-tuningV2](https://github.com/THUDM/P-tuning-v2).
+
+We acknowledge [Time-Series-Library](https://github.com/thuml/Time-Series-Library) for supporting such a perfect training pipline.
