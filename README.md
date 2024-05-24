@@ -3,7 +3,7 @@
  This is the pytorch implementation for Our Paper: NuwaTS: Mending Every Incomplete Time Series
 ## Overview 
 <p align="center">
-    <img src="images/NuwaTS.jpg" width="700" align="center">
+    <img src="images/NuwaTS.jpg" width="300" align="center">
 </p>
 
 
