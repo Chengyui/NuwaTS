@@ -24,9 +24,20 @@ Our contributions are as follows:
       <img src="images/model_arch.jpg" width="500" align="center">
   </p>
 
+## Visualization
 
-
-
+<p align="center">
+    <img src="images/case1.jpg" width="700" align="center">
+</p>
+<p align="center">
+    <img src="images/case2.jpg" width="700" align="center">
+</p>
+<p align="center">
+    <img src="images/case3.jpg" width="700" align="center">
+</p>
+<p align="center">
+    <img src="images/case4.jpg" width="700" align="center">
+</p>
 
 ## Data Download
 
