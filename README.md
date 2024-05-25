@@ -1,4 +1,4 @@
-# NuwaTS: Mending Every Incomplete Time Series
+# NuwaTS: a Foundation Model Mending Every Incomplete Time Series
 
  This is the pytorch implementation for Our Paper: NuwaTS: Mending Every Incomplete Time Series
 
