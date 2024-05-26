@@ -52,11 +52,10 @@ Our contributions are as follows:
 
 We partitioned the dataset along the sensor (variable) dimension into training, validation and test sets in a 1:1:1 ratio.
 Thus, all the methods are tested on unseen variables.
-Source Code and data can be found in [Visualization]()
+Source Code and data can be found in [Visualization](https://github.com/Chengyui/NuwaTS/tree/master/Visualization)
 ## Data Download
 
 You could download the dataset and checkpoint from here: [Google Drive](https://drive.google.com/drive/folders/1LMESpP-hIssamTlO-rXYJpx4q9p0xzLQ?usp=drive_link)
-
 
 ### Run
 

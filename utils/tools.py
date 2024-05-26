@@ -99,7 +99,7 @@ def mask_visual(true, preds=None, name='./pic/test.pdf'):
             color = 'yellow' 
         else:
             color = 'blue'  
-        plt.plot([i, i], [preds[i],preds[i]], color=color, linewidth=2)  续
+        plt.plot([i, i], [preds[i],preds[i]], color=color, linewidth=2)
 
 
     plt.legend()
