@@ -28,7 +28,7 @@ if __name__ == '__main__':
     parser.add_argument('--task_name', type=str, default='denoise',
                         help='task name, options:[long_term_forecast, short_term_forecast, imputation, classification, anomaly_detection, denoise]')
     parser.add_argument('--is_training', type=int, default=1, help='status')
-    parser.add_argument('--model_id', type=str, required=True, default='test', help='model id')
+    parser.add_argument('--model_id', type=str,  default='test', help='model id')
     parser.add_argument('--model', type=str, required=True, default='Autoformer',
                         help='model name, options: [Autoformer, Transformer, TimesNet]')
 

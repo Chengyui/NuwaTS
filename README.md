@@ -62,7 +62,7 @@ You could download the dataset and checkpoint from here: [Google Drive](https://
 ```angular2html
 python run.py --task_name imputation --is_training 1 
 --root_path ./dataset/ --data_path electricity.csv  --model NuwaTS 
---data custom --features M--seq_len 96 --label_len 0 --pred_len 0 
+--data custom --features M --seq_len 96 --label_len 0 --pred_len 0 
 --enc_in 107 --dec_in 107 --c_out 107 --gpt_layer 6 
 --batch_size 16 --d_model 768 --patch_size 16 
 --des NuwaTS_ECL  --mlp 1 --learning_rate 0.001 
