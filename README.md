@@ -2,6 +2,7 @@
 
  This is the pytorch implementation for Our Paper: NuwaTS: Mending Every Incomplete Time Series
 
+You could access the online demo through: [NuwaTS-Colab](https://colab.research.google.com/drive/1jjM6g4N7AqyHjYawZWJdbFgNY7p4ZtGY?usp=sharing)
 
 <p align="center">
     <img src="images/NuwaTS.jpg" width="300" align="center">

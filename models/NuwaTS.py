@@ -85,9 +85,11 @@ class Model(nn.Module):
                     config=self.bert_config,
                 )
             else:
-                self.gpt2 = GPT2Model.from_pretrained('gpt2/gpt2/', output_attentions=True,
-                                                      output_hidden_states=True, local_files_only=True)
-                self.tokenizer = GPT2Tokenizer.from_pretrained('gpt2/gpt2/', local_files_only=True)
+                # self.gpt2 = GPT2Model.from_pretrained('gpt2/gpt2/', output_attentions=True,
+                #                                       output_hidden_states=True, local_files_only=True)
+                # self.tokenizer = GPT2Tokenizer.from_pretrained('gpt2/gpt2/', local_files_only=True)
+                self.gpt2_config = GPT2Config()
+                self.gpt2 = GPT2Model(self.gpt2_config)
                 self.gpt2.h = self.gpt2.h[:configs.gpt_layers]
         else:
             self.llama_config = LlamaConfig.from_pretrained(
