@@ -54,7 +54,7 @@ We partitioned the dataset along the sensor (variable) dimension into training, 
 Thus, all the methods are tested on unseen variables.
 ## Data Download
 
-You could download the dataset from here: [Google Drive](https://drive.google.com/drive/folders/1LMESpP-hIssamTlO-rXYJpx4q9p0xzLQ?usp=drive_link)
+You could download the dataset and checkpoint from here: [Google Drive](https://drive.google.com/drive/folders/1LMESpP-hIssamTlO-rXYJpx4q9p0xzLQ?usp=drive_link)
 
 
 ### Run
