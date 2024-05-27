@@ -57,7 +57,10 @@ def draw_missingrate():
         index = 96
         time_serie = batch_x[batch_id,:,t_id]
         time_serie = np.append(time_serie,0)
-        mask = np.append(mask,0)
+        if mask[-1] == 0:
+            mask = np.append(mask, 1)
+        else:
+            mask = np.append(mask, 0)
         for i, value in enumerate(time_serie):
             # if i ==80:
             #     print("hello")
