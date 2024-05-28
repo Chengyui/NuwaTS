@@ -1,6 +1,6 @@
 # NuwaTS: a Foundation Model Mending Every Incomplete Time Series
 
- This is the pytorch implementation for Our Paper: [NuwaTS](https://arxiv.org/pdf/2405.15317)
+ This is the pytorch implementation for Our Paper: [NuwaTS](https://arxiv.org/abs/2405.15317v2)
 
 You could access the online demo through: [NuwaTS-Colab](https://colab.research.google.com/drive/1jjM6g4N7AqyHjYawZWJdbFgNY7p4ZtGY?usp=sharing)
 
