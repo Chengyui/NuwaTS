@@ -271,8 +271,6 @@ class Model(nn.Module):
             x_enc, x_mark_enc, x_dec, x_mark_dec, mask,skip_output=skip_output)
         return dec_out  # [B, L, D]
 
-
-    # 确保prompt_embedding和enc_out维度一样
     def imputation(self, x_enc, x_mark_enc, x_dec, x_mark_dec, mask,skip_output=False):
 
         if mask is None:
@@ -285,11 +283,15 @@ class Model(nn.Module):
             # Normalization from Non-stationary Transformer
             means = torch.sum(x_enc, dim=1) / torch.sum(mask == 1, dim=1)
             means = means.unsqueeze(1).detach()
+            # Prevent division by 0
+            means = torch.where(torch.isnan(means),torch.zeros_like(means),means)
             x_enc = x_enc - means
             x_enc = x_enc.masked_fill(mask == 0, 0)
             stdev = torch.sqrt(torch.sum(x_enc * x_enc, dim=1) /
                                torch.sum(mask == 1, dim=1) + 1e-5)
             stdev = stdev.unsqueeze(1).detach()
+            # Prevent division by 0
+            stdev = torch.where(torch.isnan(stdev), torch.ones_like(stdev), stdev)
             x_enc /= stdev
         B, T, N = x_enc.size()
         patch_num = T//self.patch_size
@@ -405,7 +407,6 @@ class Model(nn.Module):
         k_fft = torch.fft.rfft(x_enc.permute(0, 2, 1).contiguous(), dim=-1)
         res = q_fft * torch.conj(k_fft)
         corr = torch.fft.irfft(res, dim=-1)
-        # mean_value = torch.mean(corr, dim=1) #如果是channel independent 不用平均
         _, lags = torch.topk(corr, self.top_k, dim=-1)
         return lags
 
