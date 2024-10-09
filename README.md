@@ -33,7 +33,7 @@ Our contributions are as follows:
 - We introduce NuwaTS, designed to handle missing data imputation tasks for any incomplete time series. NuwaTS is trained on data from diverse domains and incorporates a light-weight “plug-and-play” fine-tuning technique that requires minimal data and computational resources, making it capable of **mending every incomplete time series**. 
 - Under the proposed benchmarking protocol, the one-for-all NuwaTS consistently outperforms domain-specific state-of-the-art methods in imputation tasks across nearly all missing rates. Moreover, fine-tuned NuwaTS can be extended to time series forecasting, where its forecasting results are comparable to or even better than existing domain-specific time series forecasting models.
 <p align="center">
-      <img src="images/model_arch.jpg" width="500" align="center">
+      <img src="images/NuwaTS_arch.jpg" width="500" align="center">
   </p>
 
 ## Visualization
