@@ -69,8 +69,79 @@ python run.py --task_name imputation --is_training 1
 
 ```
 
-### Acknowledgement
-We really thank [MVP-Tuning](https://github.com/kochsnow/MVP-Tuning) for inspiring us how to fine-tune pre-trained language model using [P-tuningV2](https://github.com/THUDM/P-tuning-v2).
 
-We acknowledge [Time-Series-Library](https://github.com/thuml/Time-Series-Library) for supporting such a perfect training pipline.
+## Citation
+
+🌟 If you find this resource helpful, please consider to star this repository and cite our research:
+
+```
+@article{cheng2024nuwats,
+  title={NuwaTS: Mending Every Incomplete Time Series},
+  author={Cheng, Jinguo and Yang, Chunwei and Cai, Wanlin and Liang, Yuxuan and Wu, Yuankai},
+  journal={arXiv preprint arXiv:2405.15317},
+  year={2024}
+}
+```
+
+
+## Further Reading
+1, [**Foundation Models for Time Series Analysis: A Tutorial and Survey**](https://arxiv.org/pdf/2403.14735), in *KDD* 2024.
+
+**Authors**: Yuxuan Liang, Haomin Wen, Yuqi Nie, Yushan Jiang, Ming Jin, Dongjin Song, Shirui Pan, Qingsong Wen*
+
+```bibtex
+@inproceedings{liang2024foundation,
+  title={Foundation models for time series analysis: A tutorial and survey},
+  author={Liang, Yuxuan and Wen, Haomin and Nie, Yuqi and Jiang, Yushan and Jin, Ming and Song, Dongjin and Pan, Shirui and Wen, Qingsong},
+  booktitle={ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2024)},
+  year={2024}
+}
+```
+
+2, [**Position Paper: What Can Large Language Models Tell Us about Time Series Analysis**](https://arxiv.org/abs/2402.02713), in *ICML* 2024.
+
+**Authors**: Ming Jin, Yifan Zhang, Wei Chen, Kexin Zhang, Yuxuan Liang*, Bin Yang, Jindong Wang, Shirui Pan, Qingsong Wen*
+
+```bibtex
+@inproceedings{jin2024position,
+   title={Position Paper: What Can Large Language Models Tell Us about Time Series Analysis}, 
+   author={Ming Jin and Yifan Zhang and Wei Chen and Kexin Zhang and Yuxuan Liang and Bin Yang and Jindong Wang and Shirui Pan and Qingsong Wen},
+  booktitle={International Conference on Machine Learning (ICML 2024)},
+  year={2024}
+}
+```
+
+3, [**Large Models for Time Series and Spatio-Temporal Data: A Survey and Outlook**](https://arxiv.org/abs/2310.10196), in *arXiv* 2023.
+[\[GitHub Repo\]](https://github.com/qingsongedu/Awesome-TimeSeries-SpatioTemporal-LM-LLM)
+
+**Authors**: Ming Jin, Qingsong Wen*, Yuxuan Liang, Chaoli Zhang, Siqiao Xue, Xue Wang, James Zhang, Yi Wang, Haifeng Chen, Xiaoli Li (IEEE Fellow), Shirui Pan*, Vincent S. Tseng (IEEE Fellow), Yu Zheng (IEEE Fellow), Lei Chen (IEEE Fellow), Hui Xiong (IEEE Fellow)
+
+```bibtex
+@article{jin2023lm4ts,
+  title={Large Models for Time Series and Spatio-Temporal Data: A Survey and Outlook}, 
+  author={Ming Jin and Qingsong Wen and Yuxuan Liang and Chaoli Zhang and Siqiao Xue and Xue Wang and James Zhang and Yi Wang and Haifeng Chen and Xiaoli Li and Shirui Pan and Vincent S. Tseng and Yu Zheng and Lei Chen and Hui Xiong},
+  journal={arXiv preprint arXiv:2310.10196},
+  year={2023}
+}
+```
+
+
+4, [**Transformers in Time Series: A Survey**](https://arxiv.org/abs/2202.07125), in IJCAI 2023.
+[\[GitHub Repo\]](https://github.com/qingsongedu/time-series-transformers-review)
+
+**Authors**: Qingsong Wen, Tian Zhou, Chaoli Zhang, Weiqi Chen, Ziqing Ma, Junchi Yan, Liang Sun
+
+```bibtex
+@inproceedings{wen2023transformers,
+  title={Transformers in time series: A survey},
+  author={Wen, Qingsong and Zhou, Tian and Zhang, Chaoli and Chen, Weiqi and Ma, Ziqing and Yan, Junchi and Sun, Liang},
+  booktitle={International Joint Conference on Artificial Intelligence(IJCAI)},
+  year={2023}
+}
+```
+
+## Acknowledgement
+- We thank [Time-LLM](https://github.com/KimMeen/Time-LLM) for inspiring us to adopt pre-trained large language models (LLM) for time series analysis.
+- We thank [MVP-Tuning](https://github.com/kochsnow/MVP-Tuning) for inspiring us to fine-tune the pre-trained language model using [P-tuningV2](https://github.com/THUDM/P-tuning-v2).
+- We thank [Time-Series-Library](https://github.com/thuml/Time-Series-Library) for supporting training pipline.
 
