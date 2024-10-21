@@ -2,7 +2,7 @@
 
 <h4 style="text-align: center;">NuwaTS is mending incomplete time series from different domain.</h4> 
 
-- This is the pytorch implementation for Our Paper: [NuwaTS](https://arxiv.org/abs/2405.15317v2)
+- This is the pytorch implementation for Our Paper: [NuwaTS](https://arxiv.org/pdf/2405.15317)
 - You could access the online demo through: [NuwaTS-Colab](https://colab.research.google.com/drive/1jjM6g4N7AqyHjYawZWJdbFgNY7p4ZtGY?usp=sharing)
 
 <p align="center">
