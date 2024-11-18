@@ -90,7 +90,20 @@ python run.py --task_name imputation --is_training 1
 
 
 ## Further Reading
-1, [**Foundation Models for Time Series Analysis: A Tutorial and Survey**](https://arxiv.org/pdf/2403.14735), in *KDD* 2024.
+1, ["Rethinking Urban Mobility Prediction: A Super-Multivariate Time Series Forecasting Approach (SUMformer)"](https://arxiv.org/abs/2312.01699), in "TITS" 2024.
+
+**Authors**: Jinguo Cheng, Ke Li, Yuxuan Liang, Lijun Sun, Junchi Yan, Yuankai Wu*
+
+```bibtex
+@article{cheng2023rethinking,
+  title={Rethinking Urban Mobility Prediction: A Super-Multivariate Time Series Forecasting Approach},
+  author={Cheng, Jinguo and Li, Ke and Liang, Yuxuan and Sun, Lijun and Yan, Junchi and Wu, Yuankai},
+  journal={arXiv preprint arXiv:2312.01699},
+  year={2023}
+}
+```
+
+2, [**Foundation Models for Time Series Analysis: A Tutorial and Survey**](https://arxiv.org/pdf/2403.14735), in *KDD* 2024.
 
 **Authors**: Yuxuan Liang, Haomin Wen, Yuqi Nie, Yushan Jiang, Ming Jin, Dongjin Song, Shirui Pan, Qingsong Wen*
 
@@ -103,7 +116,7 @@ python run.py --task_name imputation --is_training 1
 }
 ```
 
-2, [**Position Paper: What Can Large Language Models Tell Us about Time Series Analysis**](https://arxiv.org/abs/2402.02713), in *ICML* 2024.
+3, [**Position Paper: What Can Large Language Models Tell Us about Time Series Analysis**](https://arxiv.org/abs/2402.02713), in *ICML* 2024.
 
 **Authors**: Ming Jin, Yifan Zhang, Wei Chen, Kexin Zhang, Yuxuan Liang*, Bin Yang, Jindong Wang, Shirui Pan, Qingsong Wen*
 
@@ -116,7 +129,7 @@ python run.py --task_name imputation --is_training 1
 }
 ```
 
-3, [**Large Models for Time Series and Spatio-Temporal Data: A Survey and Outlook**](https://arxiv.org/abs/2310.10196), in *arXiv* 2023.
+4, [**Large Models for Time Series and Spatio-Temporal Data: A Survey and Outlook**](https://arxiv.org/abs/2310.10196), in *arXiv* 2023.
 [\[GitHub Repo\]](https://github.com/qingsongedu/Awesome-TimeSeries-SpatioTemporal-LM-LLM)
 
 **Authors**: Ming Jin, Qingsong Wen*, Yuxuan Liang, Chaoli Zhang, Siqiao Xue, Xue Wang, James Zhang, Yi Wang, Haifeng Chen, Xiaoli Li (IEEE Fellow), Shirui Pan*, Vincent S. Tseng (IEEE Fellow), Yu Zheng (IEEE Fellow), Lei Chen (IEEE Fellow), Hui Xiong (IEEE Fellow)
@@ -131,7 +144,7 @@ python run.py --task_name imputation --is_training 1
 ```
 
 
-4, [**Transformers in Time Series: A Survey**](https://arxiv.org/abs/2202.07125), in IJCAI 2023.
+5, [**Transformers in Time Series: A Survey**](https://arxiv.org/abs/2202.07125), in IJCAI 2023.
 [\[GitHub Repo\]](https://github.com/qingsongedu/time-series-transformers-review)
 
 **Authors**: Qingsong Wen, Tian Zhou, Chaoli Zhang, Weiqi Chen, Ziqing Ma, Junchi Yan, Liang Sun
